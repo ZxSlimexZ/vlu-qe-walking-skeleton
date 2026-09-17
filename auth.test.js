@@ -1,7 +1,7 @@
 const login = require("./auth");
 
 test("Đăng nhập đúng với admin / 123 thì trả về true", () => {
-  expect(login("admin", "124")).toBe(true);
+  expect(login("admin", "123")).toBe(true);
 });
 
 test("Đăng nhập sai mật khẩu thì trả về false", () => {
